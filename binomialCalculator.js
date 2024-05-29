@@ -44,3 +44,21 @@ binomialCalculator.prototype = {
 
 	type: "binomialCalculator ",
 };
+
+
+/*Triggering via Business rule:-
+
+
+(function executeRule(current, previous /*null when async*/ ) {
+    var k = current.getValue('tally');
+    var n = current.getValue('population');
+    var p = current.getValue('propensity');
+    var ep = current.getValue('element_population');
+
+   var result = new binomialCalculator().binovalue(ep, p, n, k);
+
+    current.significance = result;
+
+    //gs.addInfoMessage("Binnnoresult " + result);
+
+})(current, previous);*/
